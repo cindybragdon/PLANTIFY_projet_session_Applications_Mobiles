@@ -1,4 +1,4 @@
-# PLANTIFY_projet_session_Applications_Mobiles
+<h1 align="center"><i> PLANTIFY_projet_session_Applications_Mobiles  </i></h1>
 
 <h1 align="center"><i> Epreuve Finale </i></h1>
 <h2 align="center">Remis par :</h2>
