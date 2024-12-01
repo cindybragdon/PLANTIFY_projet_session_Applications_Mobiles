@@ -66,5 +66,56 @@ L’application permet :
   npx expo install expo-router 
   ```
 
-1. Cloner le dépôt
-Clonez ce dépôt sur votre machine locale et naviguez dans le répertoire du projet :
+1. Clonez le dépôt
+Clonez ce projet sur votre machine locale en exécutant la commande suivante :
+  ```bash
+  git clone https://github.com/votre-utilisateur/votre-projet.git
+  cd votre-projet
+  ```
+
+2. Installez les dépendances
+Installez les dépendances nécessaires pour le projet React Native et le back-end :
+```bash
+  npm install
+  ```
+
+3. Configurer la base de données
+Vous devez créer la base de données MySQL pour l'application. Pour cela, suivez ces étapes :
+
+Ouvrez votre client MySQL.
+Créez une nouvelle base de données en utilisant le script makeBD.sql présent dans le dossier du projet :
+```bash
+  mysql -u root -p < makeBD.sql
+  ```
+Vérifiez que la base de données a bien été créée et que les tables sont présentes.
+Les identifiants de connexion sont :
+
+Utilisateur: root
+Mot de passe: abc-123
+
+
+4. Lancer le serveur back-end
+Dans le dossier du projet, démarrez le serveur back-end avec la commande suivante :
+```bash
+  npm run dev
+  ```
+Cela démarrera l'API Express.js sur le port 5000 par défaut.
+
+
+5. Lancer l'application mobile
+Ouvrez un autre terminal dans le même dossier du projet et exécutez la commande suivante pour démarrer l'application mobile avec Expo :
+```bash
+  npm start
+  ```
+Cela ouvrira une page dans votre navigateur avec un QR code. Scannez ce code avec l'application Expo Go sur votre appareil Android pour voir l'application en action.
+
+
+6. Déploiement
+Lorsque vous êtes prêt à déployer l'application en format .apk pour la distribution sur des appareils Android, vous pouvez créer l'APK en exécutant la commande suivante :
+```bash
+  expo build:android
+  ```
+Cela générera un fichier .apk que vous pourrez installer sur des appareils Android.
+
+
+
